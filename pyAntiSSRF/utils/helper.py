@@ -33,11 +33,7 @@ def safe_request_url(url):
     new_url = url.replace(hostname,ip)
     return requests.get(new_url,headers={'Host':hostname},allow_redirects=False)
 
-if __name__ == '__main__':
-    url = 'http://antiSSRF2.1.dns.m0d9.me/aaaaaa'
-    ret = safe_request_url(url)
-    print(ret.content)
-
-    # url = 'http://11.1.1.1/aaaaaa'
-    # ret = safe_request_url(url)
+# if __name__ == '__main__':
+#     url = 'http://11.1.1.1/aaaaaa'
+#     ret = safe_request_url(url)
 
