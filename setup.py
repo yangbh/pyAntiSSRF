@@ -14,7 +14,7 @@ with open("requirements.txt", "r") as fr:
 
 setup(
         name='pyAntiSSRF',
-        version='0.0.2',
+        version='0.0.3',
         packages=['pyAntiSSRF',],
         install_requires=requires,
         url='https://github.com/yangbh/pyAntiSSRF',

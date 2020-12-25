@@ -15,7 +15,7 @@ def is_inner_ipaddress(ip):
     ip = ip2long(ip)
     return ip2long('127.0.0.0') >> 24 == ip >> 24 or \
            ip2long('10.0.0.0') >> 24 == ip >> 24 or \
-           ip2long('172.16.0.0') >> 20 == ip >> 20 or \
+           ip2long('172.16.0.0') >> 16 == ip >> 16 or \
            ip2long('192.168.0.0') >> 16 == ip >> 16 or \
            ip2long('0.0.0.0') >> 24 == ip >> 24 or \
            ip2long('100.0.0.0') >> 24 == ip >> 24 or \
